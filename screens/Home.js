@@ -32,7 +32,10 @@ const Home = ({ navigation }) => {
                 <View
                   style={{marginTop: SIZES.font, marginHorizontal: SIZES.padding}}>
                       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}> 
-                        <Text style={{color: COLORS.gray, ...FONTS.h2}}>What are you feeling?</Text>    
+                        <Text style={{color: COLORS.gray, ...FONTS.h2}}>Main</Text>    
+                      </View>
+                      <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}> 
+                        <Text style={{color: COLORS.gray, ...FONTS.h2}}>Categories</Text>    
                       </View>
         
 
@@ -74,7 +77,7 @@ const Home = ({ navigation }) => {
                 
                         <TouchableOpacity
                             style={{flex:1, marginLeft: SIZES.font}}
-                            onPress={() => { console.log("pressed")}}
+                            onPress={() => navigation.navigate("Cooking")}
                         >    
                             <Image
                                 source={images.cooking}
